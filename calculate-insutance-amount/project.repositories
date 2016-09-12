@@ -59,14 +59,6 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>Jboss central group1</id>
-        <url>https://repository.jboss.org/nexus/content/groups/public/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
         <id>jboss-deprecated</id>
         <url>https://repository.jboss.org/nexus/content/repositories/deprecated/</url>
         <source>SETTINGS</source>
@@ -77,6 +69,14 @@
       <metadata>
         <id>chtijbug-snapshot</id>
         <url>http://build.pymma-software.org:8081/nexus/content/repositories/chtijbug-snapshot/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>Jboss central group1</id>
+        <url>https://repository.jboss.org/nexus/content/groups/public/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -227,16 +227,16 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>fusesource</id>
-        <url>http://repo.fusesource.com/nexus/content/groups/public/</url>
+        <id>jboss-public-repository-group</id>
+        <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-public-repository-group</id>
-        <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+        <id>fusesource</id>
+        <url>http://repo.fusesource.com/nexus/content/groups/public/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
