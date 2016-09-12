@@ -27,16 +27,16 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>/public-jboss2</id>
-        <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
+        <id>jboss</id>
+        <url>http://repository.jboss.org/nexus/content/groups/public/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss</id>
-        <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+        <id>/public-jboss2</id>
+        <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -59,8 +59,8 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>Jboss central group1</id>
-        <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+        <id>jboss-deprecated</id>
+        <url>https://repository.jboss.org/nexus/content/repositories/deprecated/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -75,8 +75,8 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-deprecated</id>
-        <url>https://repository.jboss.org/nexus/content/repositories/deprecated/</url>
+        <id>Jboss central group1</id>
+        <url>https://repository.jboss.org/nexus/content/groups/public/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
@@ -227,16 +227,16 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>fusesource</id>
-        <url>http://repo.fusesource.com/nexus/content/groups/public/</url>
+        <id>jboss-public-repository-group</id>
+        <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-public-repository-group</id>
-        <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+        <id>fusesource</id>
+        <url>http://repo.fusesource.com/nexus/content/groups/public/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
