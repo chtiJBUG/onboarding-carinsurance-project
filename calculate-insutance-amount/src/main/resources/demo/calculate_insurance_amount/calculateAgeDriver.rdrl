@@ -1,0 +1,9 @@
+package demo.calculate_insurance_amount;
+
+import java.lang.Number;
+
+rule "calculateAgeDriver"
+	dialect "mvel"
+	when
+	then
+end
