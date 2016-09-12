@@ -8,12 +8,12 @@ rule "calculateAgeDriver"
 	dialect "mvel"
 	ruleflow-group "init"
 	when
-		d : Driver( birthDate != null )
-		QuoteRequest( drivers contains d , quoteDate != null )
+		d : Driver( bDate : birthDate != null )
+		QuoteRequest( drivers contains d , qDate : quoteDate != null )
 	then
 		CalculatedAgeElement fact0 = new CalculatedAgeElement();
 		fact0.setDriver( d );
 		fact0.setKey( "agePerson" );
-		fact0.setDoubleValue(  );
+		fact0.setDoubleValue( AgeCalculationYear(qDate,bDate) );
 		insert( fact0 );
 end
