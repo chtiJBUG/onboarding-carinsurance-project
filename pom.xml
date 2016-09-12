@@ -7,6 +7,9 @@
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>onboarding-carinsurance-project</name>
+  <modules>
+    <module>calculate-insutance-amount</module>
+  </modules>
   <repositories>
     <repository>
       <id>guvnor-m2-repo</id>
