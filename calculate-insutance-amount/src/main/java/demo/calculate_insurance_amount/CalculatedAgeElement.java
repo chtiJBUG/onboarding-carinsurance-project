@@ -12,6 +12,8 @@ public class CalculatedAgeElement implements java.io.Serializable
    private java.lang.String key;
    private java.lang.Double doubleValue;
 
+   private org.chtijbug.drools.carinsurance.model.Driver driver;
+
    public CalculatedAgeElement()
    {
    }
@@ -36,10 +38,22 @@ public class CalculatedAgeElement implements java.io.Serializable
       this.doubleValue = doubleValue;
    }
 
-   public CalculatedAgeElement(java.lang.String key, java.lang.Double doubleValue)
+   public org.chtijbug.drools.carinsurance.model.Driver getDriver()
+   {
+      return this.driver;
+   }
+
+   public void setDriver(org.chtijbug.drools.carinsurance.model.Driver driver)
+   {
+      this.driver = driver;
+   }
+
+   public CalculatedAgeElement(java.lang.String key, java.lang.Double doubleValue,
+         org.chtijbug.drools.carinsurance.model.Driver driver)
    {
       this.key = key;
       this.doubleValue = doubleValue;
+      this.driver = driver;
    }
 
 }
