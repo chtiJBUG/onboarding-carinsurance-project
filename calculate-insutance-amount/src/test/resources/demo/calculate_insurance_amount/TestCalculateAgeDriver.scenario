@@ -27,7 +27,15 @@
       <name>q</name>
       <isModify>false</isModify>
     </fact-data>
+    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+      <name>init</name>
+    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace/>
+    <expect-fact>
+      <fieldValues/>
+      <name>CalculatedAgeElement</name>
+      <anonymous>true</anonymous>
+    </expect-fact>
   </fixtures>
   <rules/>
   <inclusive>false</inclusive>
