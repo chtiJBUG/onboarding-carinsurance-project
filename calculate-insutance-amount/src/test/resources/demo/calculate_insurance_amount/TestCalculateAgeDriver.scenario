@@ -20,7 +20,7 @@
       <fieldData>
         <field-data>
           <name>quoteDate</name>
-          <value>23-Sep-2016</value>
+          <value>23-Aug-2016</value>
           <nature>1</nature>
         </field-data>
         <field-data>
@@ -41,7 +41,7 @@
       <name>init</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>26</executionTimeResult>
+      <executionTimeResult>23</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -50,8 +50,8 @@
           <fieldName>doubleValue</fieldName>
           <expected>48</expected>
           <actualResult>48.083333333333336</actualResult>
-          <successResult>false</successResult>
-          <explanation>[CalculatedAgeElement] field [doubleValue] was [48.083333333333336] expected [48].</explanation>
+          <successResult>true</successResult>
+          <explanation>[CalculatedAgeElement] field [doubleValue] was [48].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -67,7 +67,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-09-13 09:17:01.202 UTC</lastRunResult>
+  <lastRunResult>2016-09-13 10:10:54.517 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>demo.calculate_insurance_amount</packageName>
