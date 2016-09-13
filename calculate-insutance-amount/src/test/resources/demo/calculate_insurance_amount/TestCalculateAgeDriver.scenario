@@ -40,6 +40,9 @@
       <org.drools.workbench.models.datamodel.imports.Import>
         <type>org.chtijbug.drools.carinsurance.model.QuoteRequest</type>
       </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>org.chtijbug.drools.carinsurance.model.Rule</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
     </imports>
   </imports>
   <ksessions>
