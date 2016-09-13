@@ -13,5 +13,7 @@ rule "calculateAgeDriver"
 	then
 		CalculatedAgeElement fact0 = new CalculatedAgeElement();
 		fact0.setDoubleValue( AgeCalculationYear(bDate,qDate) );
+		fact0.setKey( "ageperson" );
+		fact0.setDriver( d );
 		insert( fact0 );
 end
