@@ -23,6 +23,16 @@
           <value>23-Sep-2016</value>
           <nature>1</nature>
         </field-data>
+        <field-data>
+          <name>drivers</name>
+          <collectionFieldList>
+            <field-data>
+              <name>drivers</name>
+              <value>d</value>
+              <nature>4</nature>
+            </field-data>
+          </collectionFieldList>
+        </field-data>
       </fieldData>
       <name>q</name>
       <isModify>false</isModify>
@@ -31,23 +41,33 @@
       <name>init</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>37</executionTimeResult>
-      <numberOfRulesFired>0</numberOfRulesFired>
+      <executionTimeResult>27</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>doubleValue</fieldName>
           <expected>48</expected>
+          <actualResult>48.083333333333336</actualResult>
+          <successResult>false</successResult>
+          <explanation>[CalculatedAgeElement] field [doubleValue] was [48.083333333333336] expected [48].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>CalculatedAgeElement</name>
       <anonymous>true</anonymous>
     </expect-fact>
+    <expect-rule>
+      <ruleName>calculateAgeDriver</ruleName>
+      <explanation>Rule [calculateAgeDriver] was activated 1 times.</explanation>
+      <expectedFire>true</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
+    </expect-rule>
   </fixtures>
-  <lastRunResult>2016-09-13 09:14:43.892 UTC</lastRunResult>
+  <lastRunResult>2016-09-13 09:16:53.147 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>demo.calculate_insurance_amount</packageName>
