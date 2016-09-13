@@ -59,16 +59,16 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>thirdparty</id>
-        <url>https://repository.jboss.org/nexus/content/repositories/thirdparty-uploads</url>
+        <id>repo1</id>
+        <url>http://repo1.maven.org/maven2</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>repo1</id>
-        <url>http://repo1.maven.org/maven2</url>
+        <id>thirdparty</id>
+        <url>https://repository.jboss.org/nexus/content/repositories/thirdparty-uploads</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
