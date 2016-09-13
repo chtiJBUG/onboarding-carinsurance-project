@@ -35,7 +35,14 @@
       <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
-      <fieldValues/>
+      <fieldValues>
+        <expect-field>
+          <fieldName>doubleValue</fieldName>
+          <expected>48</expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
       <name>CalculatedAgeElement</name>
       <anonymous>true</anonymous>
     </expect-fact>
