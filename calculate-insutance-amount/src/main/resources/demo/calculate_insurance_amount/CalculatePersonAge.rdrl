@@ -10,6 +10,10 @@ rule "CalculatePersonAge"
 	ruleflow-group "init"
 	when
 		QuoteRequest( qdate : quoteDate != null )
-		Driver( bdate : birthDate != null )
+		d : Driver( bdate : birthDate != null )
 	then
+		CalculatedElement fact0 = new CalculatedElement();
+		fact0.setKey( "personAge" );
+		fact0.setDoubleValue( AgeCalculationYear(bdate,qdate) );
+		insert( fact0 );
 end
