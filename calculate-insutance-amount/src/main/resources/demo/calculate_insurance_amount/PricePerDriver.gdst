@@ -82,32 +82,6 @@
         <parameters/>
       </window>
     </Pattern52>
-    <Pattern52>
-      <factType>CalculatedAgeElement</factType>
-      <boundName>cAge</boundName>
-      <isNegated>false</isNegated>
-      <conditions>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString>d</valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>dd</header>
-          <constraintValueType>3</constraintValueType>
-          <factField>driver</factField>
-          <fieldType>Driver</fieldType>
-          <operator>==</operator>
-          <parameters/>
-        </condition-column52>
-      </conditions>
-      <window>
-        <operator></operator>
-        <parameters/>
-      </window>
-    </Pattern52>
   </conditionPatterns>
   <actionCols/>
   <auditLog>
@@ -187,11 +161,6 @@
         <valueNumeric class="long">2</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_LONG</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>d</valueString>
-        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
