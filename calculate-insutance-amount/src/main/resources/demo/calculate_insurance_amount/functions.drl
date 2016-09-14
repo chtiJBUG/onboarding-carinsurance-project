@@ -11,7 +11,7 @@ import java.lang.Double;
 
 
 
-function double AgeCalculationYear(Date d1,Date d2) {
+function double AgeCalculationYear1(Date d1,Date d2) {
 	Calendar c1 = Calendar.getInstance();
 	c1.setTime(d1);
 	int day1=   c1.get(Calendar.DAY_OF_MONTH);
@@ -28,7 +28,7 @@ function double AgeCalculationYear(Date d1,Date d2) {
 	double age = val1+val2+val3;
 	return age;
 }
-function double AgeCalculationMonth(Date d1,Date d2) {
+function double AgeCalculationMonth1(Date d1,Date d2) {
 	Calendar c1 = Calendar.getInstance();
 	c1.setTime(d1);
 	int day1=   c1.get(Calendar.DAY_OF_MONTH);
