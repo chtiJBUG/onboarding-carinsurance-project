@@ -1,9 +1,14 @@
 package demo.calculate_insurance_amount;
 
 import java.lang.Number;
+import org.chtijbug.drools.carinsurance.model.Driver;
+import org.chtijbug.drools.carinsurance.model.QuoteRequest;
 
 rule "CalculateAgeElement"
 	dialect "mvel"
+	ruleflow-group "init"
 	when
+		Driver( bdate : birthDate != null )
+		QuoteRequest( qdate : quoteDate != null )
 	then
 end
