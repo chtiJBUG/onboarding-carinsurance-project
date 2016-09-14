@@ -12,7 +12,7 @@ rule "calculateAgeDriver"
 		QuoteRequest( drivers contains d , qDate : quoteDate != null )
 	then
 		CalculatedAgeElement fact0 = new CalculatedAgeElement();
-		fact0.setDoubleValue( 12 );
+		fact0.setDoubleValue( AgeCalculationYear(bDate,qDate) );
 		fact0.setKey( "ageperson" );
 		fact0.setDriver( d );
 		insert( fact0 );
