@@ -9,8 +9,8 @@ rule "CalculatePersonAge"
 	dialect "mvel"
 	ruleflow-group "init"
 	when
-		QuoteRequest( qdate : quoteDate != null )
 		d : Driver( bdate : birthDate != null )
+		QuoteRequest( qdate : quoteDate != null , drivers contains d )
 	then
 		CalculatedElement fact0 = new CalculatedElement();
 		fact0.setKey( "personAge" );
