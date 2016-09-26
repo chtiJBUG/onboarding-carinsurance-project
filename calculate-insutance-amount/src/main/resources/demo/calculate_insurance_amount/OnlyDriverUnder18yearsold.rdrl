@@ -5,12 +5,13 @@ import org.chtijbug.drools.carinsurance.model.CalculatedElement;
 import org.chtijbug.drools.carinsurance.model.Rule;
 
 rule "OnlyDriverUnder18yearsold"
-	dialect "mvel"
+	dialect "java"
 	ruleflow-group "korules"
 	when
 		CalculatedElement( key == "personAge" , doubleValue != null , doubleValue < 18.0 )
 	then
 		Rule fact0 = new Rule();
 		fact0.setRuleName( "OnlyDriverUnder18yearsold" );
+		fact0.setRuleLevel( RuleLevel.red );
 		insert( fact0 );
 end
