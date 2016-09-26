@@ -8,7 +8,7 @@
       <fieldData>
         <field-data>
           <name>birthDate</name>
-          <value>23-Aug-1968</value>
+          <value>23-Aug-2000</value>
           <nature>1</nature>
         </field-data>
       </fieldData>
@@ -40,8 +40,11 @@
     <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
       <name>init</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+      <name>korules</name>
+    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>29</executionTimeResult>
+      <executionTimeResult>28</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -55,7 +58,7 @@
       <fieldValues>
         <expect-field>
           <fieldName>doubleValue</fieldName>
-          <expected>48.0</expected>
+          <expected>16.0</expected>
           <successResult>true</successResult>
           <explanation>[CalculatedElement] field [doubleValue] was [48.0].</explanation>
           <operator>==</operator>
@@ -64,15 +67,17 @@
         <expect-field>
           <fieldName>key</fieldName>
           <expected>personAge</expected>
+          <successResult>true</successResult>
+          <explanation>[CalculatedElement] field [key] was [personAge].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>CalculatedElement</name>
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-09-26 12:35:04.427 UTC</lastRunResult>
+  <lastRunResult>2016-09-26 12:36:30.458 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>demo.calculate_insurance_amount</packageName>
