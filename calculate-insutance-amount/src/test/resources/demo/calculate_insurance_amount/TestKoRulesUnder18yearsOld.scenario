@@ -8,7 +8,7 @@
       <fieldData>
         <field-data>
           <name>birthDate</name>
-          <value>23-Aug-1968</value>
+          <value>23-Aug-2000</value>
           <nature>1</nature>
         </field-data>
       </fieldData>
@@ -41,7 +41,7 @@
       <name>init</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>30</executionTimeResult>
+      <executionTimeResult>31</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -89,7 +89,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-09-26 12:45:53.26 UTC</lastRunResult>
+  <lastRunResult>2016-09-26 12:46:30.264 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>demo.calculate_insurance_amount</packageName>
