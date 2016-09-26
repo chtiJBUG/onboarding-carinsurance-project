@@ -58,7 +58,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>23</executionTimeResult>
+      <executionTimeResult>15</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -75,15 +75,18 @@
         <expect-field>
           <fieldName>ruleLevel</fieldName>
           <expected>RuleLevel.red</expected>
+          <actualResult>red</actualResult>
+          <successResult>false</successResult>
+          <explanation>[Rule] field [ruleLevel] was [red] expected [RuleLevel.red].</explanation>
           <operator>==</operator>
-          <nature>4</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>Rule</name>
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-09-26 12:51:25.410 UTC</lastRunResult>
+  <lastRunResult>2016-09-26 20:38:27.846 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>demo.calculate_insurance_amount</packageName>
