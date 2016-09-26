@@ -1,5 +1,5 @@
 <scenario>
-  <name>TestCalculateAgeDriver.scenario</name>
+  <name>TestKoRulesUnder18yearsOld.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
   <fixtures>
@@ -41,7 +41,7 @@
       <name>init</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>29</executionTimeResult>
+      <executionTimeResult>30</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -64,15 +64,32 @@
         <expect-field>
           <fieldName>key</fieldName>
           <expected>personAge</expected>
+          <successResult>true</successResult>
+          <explanation>[CalculatedElement] field [key] was [personAge].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>CalculatedElement</name>
       <anonymous>true</anonymous>
     </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>ruleName</fieldName>
+          <expected>OnlyDriverUnder18yearsold</expected>
+          <actualResult>No match</actualResult>
+          <successResult>false</successResult>
+          <explanation>Fact of type [Rule] was not found in the results.</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
+      <name>Rule</name>
+      <anonymous>true</anonymous>
+    </expect-fact>
   </fixtures>
-  <lastRunResult>2016-09-26 12:35:04.427 UTC</lastRunResult>
+  <lastRunResult>2016-09-26 12:45:53.26 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>demo.calculate_insurance_amount</packageName>
