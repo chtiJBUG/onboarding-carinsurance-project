@@ -51,6 +51,18 @@
       <successResult>true</successResult>
       <actualResult>1</actualResult>
     </expect-rule>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>doubleValue</fieldName>
+          <expected>48.0</expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>CalculatedElement</name>
+      <anonymous>true</anonymous>
+    </expect-fact>
   </fixtures>
   <lastRunResult>2016-09-26 12:29:19.205 UTC</lastRunResult>
   <rules/>
