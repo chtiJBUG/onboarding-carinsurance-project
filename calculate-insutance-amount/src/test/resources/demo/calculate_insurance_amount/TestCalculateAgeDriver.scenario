@@ -49,9 +49,9 @@
         <expect-field>
           <fieldName>doubleValue</fieldName>
           <expected>48</expected>
-          <actualResult>48.083333333333336</actualResult>
-          <successResult>true</successResult>
-          <explanation>[CalculatedAgeElement] field [doubleValue] was [48].</explanation>
+          <actualResult>No match</actualResult>
+          <successResult>false</successResult>
+          <explanation>Fact of type [CalculatedAgeElement] was not found in the results.</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -60,14 +60,14 @@
       <anonymous>true</anonymous>
     </expect-fact>
     <expect-rule>
-      <ruleName>calculateAgeDriver</ruleName>
-      <explanation>Rule [calculateAgeDriver] was activated 1 times.</explanation>
+      <ruleName>CalculatePersonAge</ruleName>
+      <explanation>Rule [CalculatePersonAge] was activated 1 times.</explanation>
       <expectedFire>true</expectedFire>
       <successResult>true</successResult>
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-09-13 10:10:54.517 UTC</lastRunResult>
+  <lastRunResult>2016-09-26 11:53:41.816 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>demo.calculate_insurance_amount</packageName>
