@@ -11,7 +11,6 @@ rule "OnlyDriverUnder18yearsold"
 		CalculatedElement( key == "personAge" , doubleValue != null , doubleValue < 18.0 )
 	then
 		Rule fact0 = new Rule();
-		fact0.setRuleLevel( RuleLevel.red );
 		fact0.setRuleName( "OnlyDriverUnder18yearsold" );
 		insert( fact0 );
 end
