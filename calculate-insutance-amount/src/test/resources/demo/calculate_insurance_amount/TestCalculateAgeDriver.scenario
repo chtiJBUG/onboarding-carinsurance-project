@@ -76,6 +76,10 @@
       <name>CalculatedElement</name>
       <anonymous>true</anonymous>
     </expect-fact>
+    <expect-rule>
+      <ruleName>OnlyDriverUnder18yearsold</ruleName>
+      <expectedFire>true</expectedFire>
+    </expect-rule>
   </fixtures>
   <lastRunResult>2016-09-26 12:36:30.458 UTC</lastRunResult>
   <rules/>
