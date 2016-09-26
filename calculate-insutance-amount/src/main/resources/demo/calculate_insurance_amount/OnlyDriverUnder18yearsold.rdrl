@@ -3,6 +3,7 @@ package demo.calculate_insurance_amount;
 import java.lang.Number;
 import org.chtijbug.drools.carinsurance.model.CalculatedElement;
 import org.chtijbug.drools.carinsurance.model.Rule;
+import org.chtijbug.drools.carinsurance.model.RuleLevel;
 
 rule "OnlyDriverUnder18yearsold"
 	dialect "java"
