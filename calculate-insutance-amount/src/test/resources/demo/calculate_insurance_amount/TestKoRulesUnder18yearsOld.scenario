@@ -50,7 +50,7 @@
         </field-data>
         <field-data>
           <name>doubleValue</name>
-          <value>18</value>
+          <value>16.0</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -58,7 +58,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>7</executionTimeResult>
+      <executionTimeResult>17</executionTimeResult>
       <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -73,9 +73,9 @@
         <expect-field>
           <fieldName>doubleValue</fieldName>
           <expected>16.0</expected>
-          <actualResult>No match</actualResult>
+          <actualResult>18.0</actualResult>
           <successResult>false</successResult>
-          <explanation>Fact of type [CalculatedElement] was not found in the results.</explanation>
+          <explanation>[CalculatedElement] field [doubleValue] was [18.0] expected [16.0].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -83,8 +83,8 @@
           <fieldName>key</fieldName>
           <expected>personAge</expected>
           <actualResult>No match</actualResult>
-          <successResult>false</successResult>
-          <explanation>Fact of type [CalculatedElement] was not found in the results.</explanation>
+          <successResult>true</successResult>
+          <explanation>[CalculatedElement] field [key] was [personAge].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -108,7 +108,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-09-26 12:48:15.131 UTC</lastRunResult>
+  <lastRunResult>2016-09-26 12:51:07.38 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>demo.calculate_insurance_amount</packageName>
