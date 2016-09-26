@@ -41,24 +41,9 @@
       <name>init</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>23</executionTimeResult>
+      <executionTimeResult>21</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
-    <expect-fact>
-      <fieldValues>
-        <expect-field>
-          <fieldName>doubleValue</fieldName>
-          <expected>48</expected>
-          <actualResult>No match</actualResult>
-          <successResult>false</successResult>
-          <explanation>Fact of type [CalculatedAgeElement] was not found in the results.</explanation>
-          <operator>==</operator>
-          <nature>1</nature>
-        </expect-field>
-      </fieldValues>
-      <name>CalculatedAgeElement</name>
-      <anonymous>true</anonymous>
-    </expect-fact>
     <expect-rule>
       <ruleName>CalculatePersonAge</ruleName>
       <explanation>Rule [CalculatePersonAge] was activated 1 times.</explanation>
@@ -67,7 +52,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2016-09-26 11:53:41.816 UTC</lastRunResult>
+  <lastRunResult>2016-09-26 12:29:19.205 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>demo.calculate_insurance_amount</packageName>
@@ -81,6 +66,9 @@
       </org.drools.workbench.models.datamodel.imports.Import>
       <org.drools.workbench.models.datamodel.imports.Import>
         <type>org.chtijbug.drools.carinsurance.model.Rule</type>
+      </org.drools.workbench.models.datamodel.imports.Import>
+      <org.drools.workbench.models.datamodel.imports.Import>
+        <type>org.chtijbug.drools.carinsurance.model.CalculatedElement</type>
       </org.drools.workbench.models.datamodel.imports.Import>
     </imports>
   </imports>
