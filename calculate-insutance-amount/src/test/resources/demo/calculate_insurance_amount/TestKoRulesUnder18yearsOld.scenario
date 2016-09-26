@@ -58,24 +58,17 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>17</executionTimeResult>
-      <numberOfRulesFired>0</numberOfRulesFired>
+      <executionTimeResult>23</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
-    <expect-rule>
-      <ruleName>CalculatePersonAge</ruleName>
-      <explanation>Rule [CalculatePersonAge] was not activated. Expected it to be activated.</explanation>
-      <expectedFire>true</expectedFire>
-      <successResult>false</successResult>
-      <actualResult>0</actualResult>
-    </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>doubleValue</fieldName>
           <expected>16.0</expected>
           <actualResult>18.0</actualResult>
-          <successResult>false</successResult>
-          <explanation>[CalculatedElement] field [doubleValue] was [18.0] expected [16.0].</explanation>
+          <successResult>true</successResult>
+          <explanation>[CalculatedElement] field [doubleValue] was [16.0].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -98,8 +91,8 @@
           <fieldName>ruleName</fieldName>
           <expected>OnlyDriverUnder18yearsold</expected>
           <actualResult>No match</actualResult>
-          <successResult>false</successResult>
-          <explanation>Fact of type [Rule] was not found in the results.</explanation>
+          <successResult>true</successResult>
+          <explanation>[Rule] field [ruleName] was [OnlyDriverUnder18yearsold].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -108,7 +101,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-09-26 12:51:07.38 UTC</lastRunResult>
+  <lastRunResult>2016-09-26 12:51:25.410 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>demo.calculate_insurance_amount</packageName>
