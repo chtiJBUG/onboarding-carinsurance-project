@@ -38,38 +38,53 @@
       <isModify>false</isModify>
     </fact-data>
     <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
-      <name>init</name>
-    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
-    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
       <name>korules</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+    <fact-data>
+      <type>CalculatedElement</type>
+      <fieldData>
+        <field-data>
+          <name>key</name>
+          <value>personAge</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>doubleValue</name>
+          <value>18</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>elt</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace>
-      <executionTimeResult>30</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>7</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>CalculatePersonAge</ruleName>
-      <explanation>Rule [CalculatePersonAge] was activated 1 times.</explanation>
+      <explanation>Rule [CalculatePersonAge] was not activated. Expected it to be activated.</explanation>
       <expectedFire>true</expectedFire>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>doubleValue</fieldName>
           <expected>16.0</expected>
-          <actualResult>16.0</actualResult>
-          <successResult>true</successResult>
-          <explanation>[CalculatedElement] field [doubleValue] was [16.0].</explanation>
+          <actualResult>No match</actualResult>
+          <successResult>false</successResult>
+          <explanation>Fact of type [CalculatedElement] was not found in the results.</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>key</fieldName>
           <expected>personAge</expected>
-          <successResult>true</successResult>
-          <explanation>[CalculatedElement] field [key] was [personAge].</explanation>
+          <actualResult>No match</actualResult>
+          <successResult>false</successResult>
+          <explanation>Fact of type [CalculatedElement] was not found in the results.</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -93,7 +108,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-09-26 12:47:43.806 UTC</lastRunResult>
+  <lastRunResult>2016-09-26 12:48:15.131 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>demo.calculate_insurance_amount</packageName>
