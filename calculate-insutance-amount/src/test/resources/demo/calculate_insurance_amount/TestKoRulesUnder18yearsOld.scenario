@@ -64,30 +64,6 @@
     <expect-fact>
       <fieldValues>
         <expect-field>
-          <fieldName>doubleValue</fieldName>
-          <expected>16.0</expected>
-          <actualResult>18.0</actualResult>
-          <successResult>true</successResult>
-          <explanation>[CalculatedElement] field [doubleValue] was [16.0].</explanation>
-          <operator>==</operator>
-          <nature>1</nature>
-        </expect-field>
-        <expect-field>
-          <fieldName>key</fieldName>
-          <expected>personAge</expected>
-          <actualResult>No match</actualResult>
-          <successResult>true</successResult>
-          <explanation>[CalculatedElement] field [key] was [personAge].</explanation>
-          <operator>==</operator>
-          <nature>1</nature>
-        </expect-field>
-      </fieldValues>
-      <name>CalculatedElement</name>
-      <anonymous>true</anonymous>
-    </expect-fact>
-    <expect-fact>
-      <fieldValues>
-        <expect-field>
           <fieldName>ruleName</fieldName>
           <expected>OnlyDriverUnder18yearsold</expected>
           <actualResult>No match</actualResult>
