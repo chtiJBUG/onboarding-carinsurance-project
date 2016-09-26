@@ -40,8 +40,11 @@
     <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
       <name>init</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+      <name>korules</name>
+    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>29</executionTimeResult>
+      <executionTimeResult>30</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -57,8 +60,8 @@
           <fieldName>doubleValue</fieldName>
           <expected>16.0</expected>
           <actualResult>16.0</actualResult>
-          <successResult>false</successResult>
-          <explanation>[CalculatedElement] field [doubleValue] was [16.0] expected [48.0].</explanation>
+          <successResult>true</successResult>
+          <explanation>[CalculatedElement] field [doubleValue] was [16.0].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -90,7 +93,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2016-09-26 12:47:26.420 UTC</lastRunResult>
+  <lastRunResult>2016-09-26 12:47:43.806 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>demo.calculate_insurance_amount</packageName>
