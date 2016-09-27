@@ -41,24 +41,24 @@
       <name>init</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
     <execution-trace>
-      <executionTimeResult>8</executionTimeResult>
-      <numberOfRulesFired>0</numberOfRulesFired>
+      <executionTimeResult>31</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>CalculatePersonAge</ruleName>
-      <explanation>Rule [CalculatePersonAge] was not activated. Expected it to be activated.</explanation>
+      <explanation>Rule [CalculatePersonAge] was activated 1 times.</explanation>
       <expectedFire>true</expectedFire>
-      <successResult>false</successResult>
-      <actualResult>0</actualResult>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>doubleValue</fieldName>
-          <expected>16.0</expected>
-          <actualResult>No match</actualResult>
-          <successResult>false</successResult>
-          <explanation>Fact of type [CalculatedElement] was not found in the results.</explanation>
+          <expected>48.0</expected>
+          <actualResult>48.0</actualResult>
+          <successResult>true</successResult>
+          <explanation>[CalculatedElement] field [doubleValue] was [48.0].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -66,8 +66,8 @@
           <fieldName>key</fieldName>
           <expected>personAge</expected>
           <actualResult>No match</actualResult>
-          <successResult>false</successResult>
-          <explanation>Fact of type [CalculatedElement] was not found in the results.</explanation>
+          <successResult>true</successResult>
+          <explanation>[CalculatedElement] field [key] was [personAge].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -75,15 +75,8 @@
       <name>CalculatedElement</name>
       <anonymous>true</anonymous>
     </expect-fact>
-    <expect-rule>
-      <ruleName>OnlyDriverUnder18yearsold</ruleName>
-      <explanation>Rule [OnlyDriverUnder18yearsold] was not activated. Expected it to be activated.</explanation>
-      <expectedFire>true</expectedFire>
-      <successResult>false</successResult>
-      <actualResult>0</actualResult>
-    </expect-rule>
   </fixtures>
-  <lastRunResult>2016-09-26 12:47:03.582 UTC</lastRunResult>
+  <lastRunResult>2016-09-27 15:20:19.579 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>demo.calculate_insurance_amount</packageName>
